@@ -1,0 +1,11 @@
+main.c:81:6:ReadDigitalStatuses	8	static
+main.c:122:6:ReadAnalogStatuses	16	static
+main.c:206:6:SendCANFrameToSerial	24	static
+main.c:223:6:SendTextExtensionFrameToSerial	24	static
+main.c:149:6:SendCANFramesToSerial	16	static
+main.c:312:6:HandleIncomingSetValueFrame	0	static
+main.c:277:6:ProcessIncomingFrame	4	static
+main.c:243:6:ReadIncomingSerialData	16	static
+main.c:434:6:SystemClock_Config	88	static,ignoring_inline_asm
+main.c:355:5:main	40	static,ignoring_inline_asm
+main.c:610:6:Error_Handler	0	static,ignoring_inline_asm
