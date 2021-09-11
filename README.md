@@ -5,7 +5,9 @@ Base on Arduino... https://github.com/janimm/RealDash-extras/tree/master/RealDas
 
 HAL
 
-USB VCP (CDC)
+USB VCP (CDC) 
+
+!! usb_cdc_if.c file edited !!
 
 2WAY without anologWrite
 
