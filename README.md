@@ -3,6 +3,8 @@ STM32F401CCU6 Blackpill
 
 Base on Arduino... https://github.com/janimm/RealDash-extras/tree/master/RealDash-CAN/Arduino-examples/RealDash_CAN_2way
 
+CubeIDE
+
 HAL
 
 USB VCP (CDC) 
