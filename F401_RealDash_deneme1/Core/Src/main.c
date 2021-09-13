@@ -114,7 +114,8 @@ void ReadDigitalStatuses()
     bitposition++;
     if (HAL_GPIO_ReadPin(pin_12_GPIO_Port,pin_12_Pin) == 1) digitalPins |= (1 << bitposition);
     bitposition++;
-    if (HAL_GPIO_ReadPin(pin_13_GPIO_Port, pin_13_Pin) == 1) digitalPins |= (1 << bitposition);
+ // if (HAL_GPIO_ReadPin(pin_13_GPIO_Port, pin_13_Pin) == 1) digitalPins |= (1 << bitposition); // no pull-up
+    if (HAL_GPIO_ReadPin(pin_13_GPIO_Port, pin_13_Pin) == 0) digitalPins |= (1 << bitposition);  // pull-up
     bitposition++;
 
 
