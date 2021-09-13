@@ -15,6 +15,8 @@ USB VCP (CDC)
 
 2WAY without anologWrite
 
+Pinouts:
+
 ![alt text](https://github.com/osos11-Git/STM32F401_Realdash_HAL/blob/main/F401_RealDash_deneme1/f4_pinout.JPG?raw=true)
 
 
