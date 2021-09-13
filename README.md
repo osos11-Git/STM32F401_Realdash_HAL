@@ -17,7 +17,7 @@ USB VCP (CDC)
 
 Pinouts:
 
-PC13 Pull-Up connected LED and configured CubeMx
+PC13 Pull-Up connected LED and configured on CubeMx
 
 ![alt text](https://github.com/osos11-Git/STM32F401_Realdash_HAL/blob/main/F401_RealDash_deneme1/f4_pinout.JPG?raw=true)
 
