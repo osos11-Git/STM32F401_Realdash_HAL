@@ -7,9 +7,9 @@ I'm used CubeIDE 1.7.0 and F4 FW 1.26.2
 
 HAL
 
-USB VCP (CDC) 
+USB VCP (CDC) Interrupt Mode, Priority 0 , I think data loss during transfer is not possible.
 
-!! usb_cdc_if.c file edited !!
+!! usb_cdc_if.c file edited !! (line 99-100 and 270-273)
 
 2WAY without anologWrite
 
