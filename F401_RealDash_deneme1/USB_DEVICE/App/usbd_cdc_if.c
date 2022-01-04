@@ -23,7 +23,7 @@
 #include "usbd_cdc_if.h"
 
 /* USER CODE BEGIN INCLUDE */
-
+#include "main.h"
 /* USER CODE END INCLUDE */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -271,6 +271,7 @@ static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
   memset(buffer_usb,'\0',64);
   memcpy(buffer_usb,Buf,lenght);
   memset(Buf,'\0',lenght);
+  ReadIncomingSerialData();
   return (USBD_OK);
   /* USER CODE END 6 */
 }

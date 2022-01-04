@@ -55,10 +55,7 @@ uint8_t lenght;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-void SendCANFrameToSerial(unsigned long canFrameId, unsigned char* frameData);
-void SendTextExtensionFrameToSerial(unsigned long canFrameId,  char* text);
-void ProcessIncomingFrame( char* frame);
-void HandleIncomingSetValueFrame(unsigned long canFrameId, char* frameData);
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -441,7 +438,7 @@ int main(void)
 	  ReadDigitalStatuses();
 	  ReadAnalogStatuses();
 	  SendCANFramesToSerial();
-	  ReadIncomingSerialData();
+	 // ReadIncomingSerialData(); // move to usbd_cdc_if.c/CDC_Receive_FS
 
 	  if (rpm++ > 5000)
 	   {

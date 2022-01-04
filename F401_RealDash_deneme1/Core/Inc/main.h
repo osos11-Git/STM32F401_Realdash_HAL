@@ -54,7 +54,14 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-
+void ReadDigitalStatuses();
+void ReadAnalogStatuses();
+void SendCANFramesToSerial();
+void ReadIncomingSerialData();
+void SendCANFrameToSerial(unsigned long canFrameId, unsigned char* frameData);
+void SendTextExtensionFrameToSerial(unsigned long canFrameId,  char* text);
+void ProcessIncomingFrame( char* frame);
+void HandleIncomingSetValueFrame(unsigned long canFrameId, char* frameData);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
